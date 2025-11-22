@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     <ul class="navlist">
+        <li class="logo"><i class="fa-jelly fa-regular fa-circle-user"> My Portfolio</i></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="contact.html" class="active">Contact Me</a></li>
+        </ul>
+<section class="contact" id="contact">
+    <div class="contact-text">
+        <h2>Contact <span>Me!</span></h2>
+        <h4>Let's Work Together</h4>
+        <h3>Get in touch using the form or contact me directly.</h3>
+        <div class="social-links">
+        <a href="https://www.instagram.com/iusman._.ahmad/" target="_blank" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://discord.com/users/elxsharkyt5591" target="_blank" title="Discord">
+            <i class="fa-brands fa-discord"></i>
+        </a>
+        </div>
+        <div class="contact-list">
+            <li><i class="bx bxs-send"></i> 2628usman.ahmad@gmail.com</li>
+            <li><i class="bx bxs-phone"></i> 0321-6699875</li>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <form onsubmit="return validateForm()">
+    <input type="text" placeholder="Enter Your Name" required>
+    <input type="email" placeholder="Enter Your Email" required>
+    <input type="text" placeholder="Enter Your Subject" required>
+    <textarea id="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+    <input type="submit" value="SUBMIT" class="send">
+        </form>
+    </div>
+    <script>
+function validateForm() {
+    let message = document.getElementById("message").value;
+    if (message.length < 20) {
+        alert("Message must be at least 20 characters!");
+        return false;
+    }
+    return true;
+}
+</script>
+</section>
+<footer class="footer">
+    <p>&copy; 2025 MY PORTFOLIO. All rights reserved.</p>
+</footer>
+</body>
+</html>
